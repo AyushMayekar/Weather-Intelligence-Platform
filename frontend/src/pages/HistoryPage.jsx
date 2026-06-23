@@ -98,7 +98,7 @@ export default function HistoryPage() {
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Filter by location..."
-          className="input-field pl-10 max-w-sm"
+          className="input-field has-icon"
         />
       </div>
 

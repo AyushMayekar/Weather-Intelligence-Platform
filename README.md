@@ -1,39 +1,30 @@
 # 🌦️ Weather Intelligence Platform
 
-A full-stack weather application that delivers real-time weather insights, air quality analysis, intelligent recommendations, interactive maps, and weather history management.
+A full-stack weather application that provides real-time weather insights, 5-day forecasts, air quality information, location-based recommendations, and weather history management.
 
 ---
 
 ## ✨ Features
 
-### Core Features
+* 🔍 Search weather by city or postal code
+* 📍 Get weather for your current location
+* 🌤️ View real-time weather conditions
+* 📅 Explore a 5-day weather forecast
+* 🌫️ Check air quality index (AQI)
+* 🗺️ Visualize locations on an interactive map
+* 💡 Receive smart weather recommendations
+* 🧳 View travel readiness insights
+* 🗂️ Manage search history with CRUD operations
+* 📤 Export stored data as CSV or JSON
+* 🌙 Toggle between light and dark themes
+* 📱 Fully responsive design
 
-- Search weather by city or postal code
-- Fetch weather using browser geolocation
-- Display current weather conditions
-- View a 5-day forecast
-- Visualize locations on an interactive map
-- View air quality index (AQI)
-- Generate weather-based recommendations
-- Provide travel readiness insights
+---
 
-### Data Management
+## 🎥 Demo Video
 
-- Store weather searches automatically
-- View search history
-- Update search records
-- Delete search records
-- Export data as CSV
-- Export data as JSON
-
-### User Experience
-
-- Responsive design
-- Light and dark mode
-- Form validation
-- Error handling
-- Loading states
-- Empty states
+Click the thumbnail below to watch the project demo.
+[![Weather Intelligence Platform Demo](docs/thumbnail.png)](docs/Weather%20App%20Demo.mp4)
 
 ---
 
@@ -41,136 +32,105 @@ A full-stack weather application that delivers real-time weather insights, air q
 
 ### Frontend
 
-- React 19
-- Vite
-- React Router
-- Axios
-- React Leaflet
-- Tailwind CSS
-- Lucide React
+* React
+* Vite
+* Tailwind CSS
+* React Router
+* Axios
+* React Leaflet
 
 ### Backend
 
-- Node.js
-- Express.js
-- Prisma ORM
-- Zod Validation
+* Node.js
+* Express.js
+* Prisma ORM
+* SQLite
 
-### Database
+### APIs
 
-- SQLite
-
-### External APIs
-
-- Open-Meteo Geocoding API
-- Open-Meteo Forecast API
-- Open-Meteo Air Quality API
-- OpenStreetMap
+* Open-Meteo Weather API
+* Open-Meteo Geocoding API
+* Open-Meteo Air Quality API
+* OpenStreetMap / Leaflet
 
 ---
 
-## 🏗️ Architecture
+## 🚀 Getting Started
 
-```text
-React + Vite Frontend
-        ↓
-Axios API Client
-        ↓
-Express REST API
-        ↓
-Prisma ORM
-        ↓
-SQLite Database
-        ↓
-Open-Meteo APIs
-```
-## 📂 Project Structure
-```
-weather-intelligence-platform/
-├── frontend/
-├── backend/
-├── README.md
-```
-## ⚙️ Installation
-Clone the repository
-```git clone <repository-url>
+### Clone the repository
+
+```bash
+git clone <repository-url>
 cd weather-intelligence-platform
 ```
-Backend Setup
+
+### Install dependencies
+
+#### Frontend
+
+```bash
+cd frontend
+npm install
 ```
+
+#### Backend
+
+```bash
 cd backend
 npm install
 ```
-Create .env:
-```
+
+### Configure environment variables
+
+Create a `.env` file inside the `backend` directory:
+
+```env
 PORT=5000
 DATABASE_URL="file:./dev.db"
 FRONTEND_URL=http://localhost:5173
 ```
-Initialize Prisma:
-```
-npx prisma migrate dev --name init
+
+### Initialize the database
+
+```bash
+npx prisma migrate dev
 npx prisma generate
 ```
-Start backend:
-```
+
+### Run the application
+
+#### Start the backend
+
+```bash
 npm run dev
-```
-Frontend Setup
-```
-cd frontend
-npm install
-```
-Start frontend:
-```
-npm run dev
-```
-Open:
-```
-http://localhost:5173
-```
-## 🔌 API Endpoints
-Weather
-```
-POST /api/weather
-POST /api/weather/coordinates
-```
-History
-```
-GET    /api/history
-GET    /api/history/:id
-PUT    /api/history/:id
-DELETE /api/history/:id
-```
-Export
-```
-GET /api/export/csv
-GET /api/export/json
-```
-Health Check
-```
-GET /api/health
-```
-🗄️ Database Schema
-WeatherSearch
-```
-Field Type
-id String
-location String
-latitude Float
-longitude Float
-startDate DateTime
-endDate DateTime
-temperature Float
-feelsLike Float
-humidity Int
-windSpeed Float
-weatherCode Int
-airQualityIndex Int
-recommendation String
-createdAt DateTime
-updatedAt DateTime
 ```
 
-👨‍💻 Developer
-Ayush Mayekar
+#### Start the frontend
+
+```bash
+npm run dev
+```
+
+Frontend: `http://localhost:5173`
+
+Backend: `http://localhost:5000`
+
+---
+
+## 📂 Project Structure
+
+```text
+weather-intelligence-platform/
+├── frontend/
+├── backend/
+├── docs/
+└── README.md
+```
+
+---
+
+## 👨‍💻 Developer
+
+**Ayush Mayekar**
+
+Built with a focus on simplicity, usability, and practical full-stack engineering.
