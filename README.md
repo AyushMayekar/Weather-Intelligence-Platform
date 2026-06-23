@@ -24,7 +24,7 @@ A full-stack weather application that provides real-time weather insights, 5-day
 ## 🎥 Demo Video
 
 Click the thumbnail below to watch the project demo.
-[![Weather Intelligence Platform Demo](docs/thumbnail.png)](docs/Weather%20App%20Demo.mp4)
+[![Weather Intelligence Platform Demo](docs/thumbnail.png)](https://youtu.be/jDlsOY0jEvQ)
 
 ---
 
