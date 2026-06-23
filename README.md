@@ -21,6 +21,13 @@ A full-stack weather application that provides real-time weather insights, 5-day
 
 ---
 
+## 🎥 Demo Video
+
+Click the thumbnail below to watch the project demo.
+[![Weather Intelligence Platform Demo](docs/thumbnail.png)](docs/Weather%20App%20Demo.mp4)
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -116,6 +123,7 @@ Backend: `http://localhost:5000`
 weather-intelligence-platform/
 ├── frontend/
 ├── backend/
+├── docs/
 └── README.md
 ```
 
